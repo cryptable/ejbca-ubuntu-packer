@@ -11,8 +11,11 @@ Setup
 -----
 
 1) Download the ejbca community edition 7.4.3.2, place it in the assets directory. Verify the file against the SHA256 file also published on Sourceforge
+
 2a) (optional) Simulator: Download the Utimaco SecurityServer V4.45.2.0 simulator from the Utimaco site
+
 2b) (optional) PCI: Copy the driver source files in the assets/securityserver-driver. Verify in documentation and scripts/securityserver.sh if the build commands have not been changed
+
 3) Choose the necessary settings in the template.pkvars.hcl. Using the default settings are very unsecure.
 
 TODO
