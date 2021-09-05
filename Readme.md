@@ -29,5 +29,6 @@ Notes
 -----
 
 1) Small problems using vmware-iso
+
 It is important when using the vmware-iso on linux that your DHCP settings are identical between the ubuntu installation and application installation (after ubuntu reboot). The best result I had with Ubuntu 20.04 was using 'dhcp-identifier:duid' in the user-data configuration (network setting and late-commands sed settings), because the autoinstall during Ubuntu installation uses this. Otherwise the vmnet8 dhcp server starts giving multiple IP addresses in the dhcp.leases and it confuses really packer.
 If this does not work, try 'dhcp-identifier:mac' in both location of linux/ubuntu/http/20.04/user-data. When creating your image, keep on the safe side your hostname in the linux/ubuntu/http/20.04/user-data the same as the hostname in the boot parameters. Otherwise again your vmnet8 dhcp server can lease different IP addresses.
