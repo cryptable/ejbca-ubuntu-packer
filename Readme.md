@@ -18,6 +18,8 @@ Setup
 
 3) Choose the necessary settings in the template.pkvars.hcl. Using the default settings are very unsecure.
 
+4) When finished and deployed, you need to remove the vagrant account. You can use the 'ejbca' account for this. This one was used by packer to build the image.
+
 TODO
 ----
 
