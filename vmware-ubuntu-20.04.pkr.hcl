@@ -196,7 +196,7 @@ build {
   ]
 
   provisioner "file" {
-    source = "assets/SecurityServerEvaluation-V4.45.2.0.zip"
+    source = "assets/SecurityServerEvaluation-V4.45.3.0.zip"
     destination = "/tmp/SecurityServer.zip"
   }
 
