@@ -30,6 +30,7 @@ EOF
 
 
 sed -i -e 's/<HEAP_SIZE>/2048/g' /opt/wildfly/bin/standalone.conf
+sed -i -e "s/<TX_NODE_ID>/$(od -A n -t d -N 1 /dev/urandom | tr -d ' ')/g" /opt/wildfly/bin/standalone.conf
 
 cp /opt/wildfly/docs/contrib/scripts/systemd/launch.sh /opt/wildfly/bin
 cp /opt/wildfly/docs/contrib/scripts/systemd/wildfly.service /etc/systemd/system
