@@ -1,9 +1,20 @@
-# VMware Section
-# --------------
+# VM Section
+# ----------
 
 vm_name = "ejbca-test"
 
 output_directory = "output-ubuntu"
+
+# Proxmox Section
+# ---------------
+
+pve_username = "ubuntu"
+
+pve_token = "secret"
+
+pve_url = "https://127.0.0.1:8006/api2/json"
+
+iso_file = "local:iso/ubuntu-20.04.3-live-server-amd64.iso"
 
 # Ubuntu Section
 # --------------
